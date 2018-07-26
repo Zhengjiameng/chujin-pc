@@ -1,12 +1,12 @@
 import React from 'react'
-import { Menu, Icon } from 'antd';
+/*import { Menu} from 'antd';*/
 import './index.less'
-const SubMenu = Menu.SubMenu;
-const MenuItemGroup = Menu.ItemGroup;
+/*const SubMenu = Menu.SubMenu;
+const MenuItemGroup = Menu.ItemGroup;*/
 export default class NavLeft extends React.Component{
-    handleClick = (e) => {
+   /* handleClick = (e) => {
         console.log('click ', e);
-    }
+    }*/
     render(){
         return(
             <div>
