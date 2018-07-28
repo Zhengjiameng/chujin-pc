@@ -3,8 +3,8 @@
 .container{
   /*display: flex;*/
   .nav-left{
-    width: 15%;
-    min-width: 180px;
+    /*width: 100%;*/
+   /* min-width: 180px;*/
     min-height:calc(~ '100vh - 235px');
     color:#fff;
     background-color: @colorBlue;
@@ -21,4 +21,12 @@
     }
   }
 
+}
+@media screen  and (max-width: 480px){
+  .container {
+    /*display: flex;*/
+    .nav-left {
+      min-height: auto;
+    }
+  }
 }

@@ -1,0 +1,116 @@
+@import "./../../style/default";
+.registerContent{
+  min-height:calc(~ '100vh - 162px');
+  background: url(/asset/banner.png);
+
+  padding-top: 20px;
+  .registerHead{
+    text-align: center;
+    font-size: 34px;
+    color:@colorF;
+    margin-bottom: 20px;
+  }
+  .registerDiv{
+    width:500px;
+    height:auto;
+    margin:0 auto;
+    background: #fff;
+    color: @color6;
+    font-size: 16px;
+    border-radius: 10px;
+    .accountRegister{
+      color:@colorBlue;
+      font-size: 18px;
+      padding-top: 30px;
+      margin-bottom: 20px;
+      span{
+        padding-bottom: 10px;
+        border-bottom: 1px solid @colorBlue;
+      }
+    }
+    ul{
+      li{
+        margin-bottom: 20px;
+        .accountLeft{
+          display: inline-block;
+          width:20%;
+          line-height: 44px;
+          text-align: right;
+        }
+        .accountInput{
+          border: 1px solid #e6e6e6;
+          border-radius: 5px;
+          margin-left: 5%;
+          display: inline-block;
+          height:44px;
+          width: 70%;
+          i{
+            display: inline-block;
+            width: 20%;
+            border-right:1px solid #e6e6e6;
+            line-height:44px;
+            text-align: center;
+          }
+          input[type="text"]{
+            width:80%;
+            margin-left: 0;
+            border:none;
+            height:95%;
+            padding:0 20px;
+          }
+        }
+        input[type="text"]{
+          width:70%;
+          margin-left: 5%;
+          padding:10px;
+          border: 1px solid #e6e6e6;
+          border-radius: 5px;
+          height: 44px;
+        }
+        .codeInput[type="text"]{
+          width:42%;
+        }
+        .getCode{
+          display: inline-block;
+          width:25%;
+          padding:10px;
+          border: 1px solid #e6e6e6;
+          border-radius: 5px;
+          margin-left: 3%;
+          text-align: center;
+          color:@colorBlue;
+          height:44px;
+        }
+      }
+    }
+    .agreement{
+      margin-left: 25%;
+    }
+    .loginButton{
+      display: inline-block;
+      width:140px;
+      height:40px;
+      background: -webkit-linear-gradient(left,@colorgreen, @colorDark);
+      color: #fff;
+      text-align: center;
+      line-height: 40px;
+      border-radius: 5px;
+    }
+  }
+}
+
+@media screen and (max-width: 480px){
+  .loginContent{
+    .loginDiv{
+        width:100%;
+      .accountLogin+div{
+        padding-bottom: 10px;
+        padding-right: 10px;
+        padding-left: 10px;
+        .accountLeft{
+          width:23%;
+        }
+      }
+    }
+  }
+}

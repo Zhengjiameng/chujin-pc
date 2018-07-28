@@ -13,13 +13,13 @@ export default class Admin extends React.Component{
         return (
             <div>
                 <Header>
-                    header
                 </Header>
-                <Banner/>
-                <Row className="container" >
-                    <Col span={18} offset="3">
+                <div className="container">
+                    <Banner/>
+                </div>
+                <div className="container">
                         <Row>
-                            <Col span={3} className="nav-left">
+                            <Col lg={4} xs={24} className="nav-left">
                                 <NavLeft />
                             </Col>
                             <Col span={15} className="main">
@@ -29,8 +29,7 @@ export default class Admin extends React.Component{
                                 </Row>
                             </Col>
                         </Row>
-                    </Col>
-                </Row>
+                </div>
                 <Footer/>
 
             </div>

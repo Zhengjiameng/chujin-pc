@@ -1,6 +1,6 @@
 @import "./../../style/default";
 .navLeft{
-  min-width:180px;
+  /*min-width:180px;*/
   li{
     height:100px;
     font-size: 18px;
@@ -13,6 +13,31 @@
     }
     .icon-left{
       font-size: 25px;
+    }
+  }
+}
+
+@media screen and (max-width: 480px){
+  .navLeft{
+    li{
+      display: inline-block;
+      width:50%;
+      height:auto;
+      font-size: 18px;
+      text-align: center;
+      padding: 20px 10px 20px 10px;
+      box-sizing: border-box;
+      border: 10px solid #fff;
+      .iconfont{
+        display: block;
+        font-size: 30px;
+        vertical-align: middle;
+        margin-right: 0;
+      }
+      .icon-left{
+        font-size: 25px;
+        display: none;
+      }
     }
   }
 }

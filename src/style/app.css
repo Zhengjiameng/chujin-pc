@@ -11,7 +11,8 @@ body{ -webkit-text-size-adjust: none;font-family:Helvetica; min-width:320px;word
 .clr:after { content:""; clear:both; visibility:hidden; display:block; font-size:0; height:0; line-height:0;}
 .clr { zoom:1;}
 input[type="button"]{ cursor: pointer;-webkit-appearance: none;}
-input[type="text"], input[type="password"] {outline: none;-webkit-appearance:none;}
+input[type="text"], input[type="password"] {outline: none;-webkit-appearance:none;
+  border: none;}
 input[type=button]:focus{border: none; outline: none;-webkit-appearance:none;}
 input::-webkit-input-placeholder, textarea::-webkit-input-placeholder { color: #999; }
 input:-moz-placeholder, textarea:-moz-placeholder { color: #999; }
@@ -419,5 +420,16 @@ body{
   font-size:28px;
   line-height: 36px;
 }
-
+.pl20{
+  padding-left: 20px;
+}
+.pr20{
+  padding-right: 20px;
+}
+.pl40{
+  padding-left: 40px;
+}
+.pr40{
+  padding-right: 40px;
+}
 
