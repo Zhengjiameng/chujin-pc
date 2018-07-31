@@ -8,6 +8,7 @@ import ChangePassword from "./pages/changePassword/changePassword";
 import Approve from "./pages/approve/approve";
 import PayProtocol from "./pages/payProtocol/payProtocol";
 import RegisterProtocol from "./pages/registerProtocol/registerProtocol";
+import PostJobs from "./pages/postJobs/postJobs";
 export default class IRouter extends React.Component{
     render(){
         return(
@@ -21,6 +22,7 @@ export default class IRouter extends React.Component{
                         <Route path="/approve" component={Approve} />
                         <Route path="/payProtocol" component={PayProtocol} />
                         <Route path="/registerProtocol" component={RegisterProtocol} />
+                        <Route path="/jobs/postJobs" component={PostJobs} />
                     </Switch>
                 </App>
             </HashRouter>

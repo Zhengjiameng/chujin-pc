@@ -2,8 +2,20 @@ import React from 'react'
 import './index.less'
 import Header from './../../components/Header'
 import Footer from './../../components/Footer'
-import { Checkbox,Input,Button } from 'antd';
+import {Input,Button,Modal} from 'antd';
 export default class Approve extends React.Component{
+    info=()=>{
+        Modal.info({
+            title: '企业认证',
+            content: (
+                <div>
+                    <p>平台已接收到您的认证信息，正在加紧审核</p>
+                </div>
+            ),
+            onOk() {},
+            okText:'确定'
+        });
+    }
     render(){
         return(
             <div className="approve">
@@ -51,7 +63,7 @@ export default class Approve extends React.Component{
                                         </li>
                                     </ul>
                                     <div className="tc mt10">
-                                        <Button className="loginButton" type="">认证</Button>
+                                        <Button className="loginButton" type="" onClick={this.info}>认证</Button>
                                     </div>
                                 </div>
 

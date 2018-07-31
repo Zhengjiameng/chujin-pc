@@ -1,0 +1,62 @@
+@import "./../../style/default";
+.postJobs{
+  .content{
+    min-height:calc(~ '100vh - 235px');
+    border-top: 1px solid @colorE6;
+    .search{
+      border-bottom: 1px solid @colorE6;
+      ul
+        li{
+        display: inline-block;
+        width:50%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        h1{
+          font-size: 16px;
+          color: @color3;
+          display: inline-block;
+          width: 15%;
+          margin-right: 5%;
+        }
+        span.ant-calendar-picker{
+          width:35%;
+          div{
+            input{
+              width:100%;
+            }
+          }
+        }
+        input{
+          border: 1px solid @colorE6;
+          width:75%;
+          height:40px;
+        }
+        em{
+          margin-left: 2%;
+          margin-right: 2%;
+        }
+      }
+    }
+    .searchContent{
+      margin-top: 40px;
+      .ant-tabs-nav .ant-tabs-tab{
+        font-size: 18px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 480px){
+  .loginContent{
+    .loginDiv{
+        width:100%;
+      .accountLogin+div{
+        padding-bottom: 10px;
+        padding-right: 10px;
+        padding-left: 10px;
+        .accountLeft{
+          width:23%;
+        }
+      }
+    }
+  }
+}
