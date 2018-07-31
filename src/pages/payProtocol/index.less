@@ -1,0 +1,39 @@
+@import "./../../style/default";
+.payProtocol{
+  .content{
+    min-height:calc(~ '100vh - 162px');
+    padding-bottom: 50px;
+    .head{
+      border-bottom: 1px solid @colorE6;
+      padding:30px 0 20px 20px;
+      span{
+        font-size: 16px;
+        border-bottom: 1px solid @colorBlue;
+        padding:0 10px 25px;
+        color:@colorBlue;
+      }
+    }
+    .protocolContent{
+      text-indent: 40px;
+      color: @color6;
+      line-height: 30px;
+    }
+  }
+}
+
+
+@media screen and (max-width: 480px){
+  .loginContent{
+    .loginDiv{
+        width:100%;
+      .accountLogin+div{
+        padding-bottom: 10px;
+        padding-right: 10px;
+        padding-left: 10px;
+        .accountLeft{
+          width:23%;
+        }
+      }
+    }
+  }
+}
