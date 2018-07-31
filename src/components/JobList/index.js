@@ -31,7 +31,13 @@ const columns = [{
     },
     {
         title: '操作',
-        dataIndex: 'handle',
+        dataIndex: 'Action',
+        render: (text, record) => (
+            <span>
+              <a href="javascript:;" className="check mr10">查看简历</a>
+              <a href="javascript:;" className="check">暂停</a>
+            </span>
+        ),
     }
 ];
 const data = [{
@@ -43,7 +49,6 @@ const data = [{
     price:'7k~9k',
     time:'06-16  14:03',
     cash:'11',
-    handle:'删除'
 
 }, {
     key: '2',
@@ -54,7 +59,6 @@ const data = [{
     price:'7k~9k',
     time:'06-16  14:03',
     cash:'11',
-    handle:'删除'
 }, {
     key: '3',
     name: '产品经理',
@@ -64,7 +68,6 @@ const data = [{
     price:'7k~9k',
     time:'06-16  14:03',
     cash:'11',
-    handle:'删除'
 }, {
     key: '4',
     name: '产品经理',
@@ -74,7 +77,6 @@ const data = [{
     price:'7k~9k',
     time:'06-16  14:03',
     cash:'11',
-    handle:'删除'
 }];
 const rowSelection = {
     onChange: (selectedRowKeys, selectedRows) => {
