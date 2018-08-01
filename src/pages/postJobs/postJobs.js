@@ -61,8 +61,8 @@ export default class PostJobs extends React.Component{
                                 <TabPane tab="招聘中" key="1">
                                     <JobList/>
                                 </TabPane>
-                                <TabPane tab="未发布" key="2">Content of Tab Pane 2</TabPane>
-                                <TabPane tab="已暂停" key="3">Content of Tab Pane 3</TabPane>
+                                <TabPane tab="未发布" key="2"><JobList/></TabPane>
+                                <TabPane tab="已暂停" key="3"><JobList/></TabPane>
                             </Tabs>,
                         </div>
                     </div>

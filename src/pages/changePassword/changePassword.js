@@ -2,7 +2,7 @@ import React from 'react'
 import './index.less'
 import Header from './../../components/Header'
 import Footer from './../../components/Footer'
-import { Checkbox,Input,Button,Icon} from 'antd';
+import { Input,Button,Icon} from 'antd';
 export default class ChangePassword extends React.Component{
     render(){
         return(

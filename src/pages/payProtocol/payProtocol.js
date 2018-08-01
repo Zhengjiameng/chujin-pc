@@ -2,12 +2,8 @@ import React from 'react'
 import './index.less'
 import Header from './../../components/Header'
 import Footer from './../../components/Footer'
-import { Checkbox,Input,Button,Tabs,Icon} from 'antd';
-const TabPane = Tabs.TabPane;
 export default class PayProtocol extends React.Component{
-    callback=(key)=>{
-        console.log(key);
-    }
+
     render(){
         return(
             <div className="payProtocol">

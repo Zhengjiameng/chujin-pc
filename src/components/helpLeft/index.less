@@ -1,0 +1,52 @@
+@import "./../../style/default";
+.helpLeft{
+  .ant-menu{
+    width:100%;
+    .ant-menu-submenu{
+      background: @colorBlue;
+      color: @colorF;
+      font-size: 16px;
+    }
+    .ant-menu-submenu-title:hover{
+      color:#fff;
+    }
+    .ant-menu-submenu-arrow:before{
+      background: @colorF;
+    }
+    .ant-menu-submenu-arrow:before:hover{
+      background:@colorF!important;
+    }
+    .ant-menu-submenu-arrow:after{
+      background: @colorF;
+    }
+    .ant-menu-submenu-arrow:after:hover{
+      background:@colorF!important;
+    }
+  }
+
+}
+
+@media screen and (max-width: 480px){
+  .navLeft{
+    li{
+      display: inline-block;
+      width:50%;
+      height:auto;
+      font-size: 18px;
+      text-align: center;
+      padding: 20px 10px 20px 10px;
+      box-sizing: border-box;
+      border: 10px solid #fff;
+      .iconfont{
+        display: block;
+        font-size: 30px;
+        vertical-align: middle;
+        margin-right: 0;
+      }
+      .icon-left{
+        font-size: 25px;
+        display: none;
+      }
+    }
+  }
+}
