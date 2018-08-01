@@ -2,6 +2,8 @@
 .index{
   .container{
     .contain{
+      background: @colorF2;
+      padding:10px 0;
       .search{
         width:60%;
         margin:30px auto;
@@ -34,114 +36,40 @@
         }
       }
       }
-  }
-  .banner{
-    background: url(/asset/banner02.png) no-repeat;
-    background-size: 100% 100%;
-    width:100%;
-    height:350px;
-    ul{
-      height:350px;
-      display: flex;
-      align-items: center;
-      li{
-        flex:1;
-        text-align: center;
-        color:@colorF;
-        .iconfont{
-         font-size: 60px;
-          color:@colorBlue;
-          display: inline-block;
-          width:100px;
-          height:100px;
-          background: @colorF;
-          text-align: center;
-          line-height: 100px;
-          border-radius: 50%;
-        }
-        button{
-          color:@colorBlue;
-        }
-      }
-    }
-  }
-  .content{
-    padding-bottom: 70px;
-    .card{
-      border: 1px solid @colorE6;
+    .condition{
+      border-top: 1px solid @colorE6;
+      border-bottom: 1px solid @colorE6;
       font-size: 14px;
-      .cardHead{
-        padding:25px 20px;
-        .top{
+      padding:0 50px;
+      ul{
+        li{
+          height:66px;
+          line-height: 66px;
           border-bottom: 1px solid @colorE6;
-          padding-bottom: 20px;
-          p{
-            display: flex;
-            justify-content: space-between;
-            .iconfont{
-              color:@colorBlue;
-              margin-left: 10px;
-            }
+          span{
+            margin-right:30px;
+            cursor: pointer;
+            padding:10px;
           }
-          p:nth-child(1){
-            font-size: 16px;
-            color: @color3;
-            padding-bottom: 10px;
-            span:last-child{
-              color:red;
-            }
+          span:first-child{
+            color:@color3;
+            margin-right: 40px;
+          }
+          span:hover{
+            background: @colorBlue;
+            color:@colorF;
+            border-radius: 5px;
+          }
+          .ant-select{
+            width:270px;
+            height:30px;
+            line-height: 30px;
           }
         }
-        .bottom{
-          padding-top: 20px;
-          display: flex;
-          align-items: center;
-          img{
-            width:40px;
-            height:40px;
-            border-radius: 50%;
-          }
+        li:last-child{
+          border-bottom: none;
         }
       }
-      .cardFoot{
-        display: flex;
-        border-top: 1px solid @colorE6;
-        a{
-          flex:1;
-          text-align: center;
-          height:50px;
-          line-height: 50px;
-          font-size: 18px;
-          color: @color7;
-        }
-        a:first-child{
-          border-right:1px solid @colorE6;
-        }
-      }
-    }
-    .card:hover{
-      background: @colorBlue;
-      color: @colorF;
-      a{
-        color:@colorF;
-      }
-      .cardHead{
-        color: @colorF;
-        .top{
-          p{
-            .iconfont{
-              color: @colorF;
-            }
-          }
-          p:nth-child(1){
-            color: @colorF;
-            span:last-child{
-              color: @colorF;
-            }
-          }
-        }
-      }
-
     }
   }
 }
