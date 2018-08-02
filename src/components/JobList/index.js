@@ -1,11 +1,13 @@
 import React from 'react'
 import {Table,Button,Icon,Switch,Modal} from 'antd'
 import './index.less'
-import {Navbar} from 'react-bootstrap'
+
 const confirm = Modal.confirm;
 export default class JobList extends React.Component{
+    dom=null
     constructor(props) {
         super(props);
+        console.log(props)
         this.columns = [{
             title: '职位名称',
             dataIndex: 'name',
@@ -113,10 +115,10 @@ export default class JobList extends React.Component{
             cancelText:'取消'
         });
     }
+
     render(){
         return(
             <div className="jobList">
-                <Icon type="delete" className="fs18 mr20 ml20 mb30"/><Button type="primary">新增</Button>
                 <Table rowSelection={this.rowSelection} columns={this.columns} dataSource={this.data} />
             </div>
         )

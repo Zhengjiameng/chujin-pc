@@ -13,6 +13,7 @@ import HelpCenter from "./pages/helpCenter/helpCenter";
 import HowRegister from "./pages/howRegister/howRegister";
 import CompanyIndex from "./pages/companyIndex/companyIndex";
 import SearchResume from "./pages/searchResume/searchResume";
+import ResumeDetail from "./pages/resumeDetail/resumeDetail";
 export default class IRouter extends React.Component{
     render(){
         return(
@@ -37,6 +38,7 @@ export default class IRouter extends React.Component{
                         <Route path="/jobs/postJobs" component={PostJobs} />
                         <Route path="/company/index"  component={CompanyIndex} />
                         <Route path="/company/searchResume"  component={SearchResume} />
+                        <Route path="/company/resumeDetail"  component={ResumeDetail} />
                     </Switch>
                 </App>
             </HashRouter>

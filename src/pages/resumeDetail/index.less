@@ -1,0 +1,121 @@
+@import "./../../style/default";
+.detail{
+  .contain{
+    background: @colorF5;
+    height:227px;
+    padding:40px;
+    .tx{
+      height:100px;
+    }
+    .userInfo{
+      margin-top: 30px;
+      font-size: 16px;
+      span{
+        color:@color3;
+        padding: 0 30px;
+        border-right:1px solid @color3;
+      }
+      i{
+        color:@colorBlue;
+      }
+    }
+    .userTel{
+      font-size: 14px;
+      color:@color6;
+      margin-top: 50px;
+      .anticon{
+        color:@colorBlue;
+        margin-right:10px;
+        font-size: 16px;
+      }
+      span{
+        margin-right: 80px;
+      }
+    }
+    .share{
+      .anticon{
+        font-size: 22px;
+      }
+    }
+  }
+  .workDetail{
+    margin-top: 40px;
+    h1{
+      font-size: 20px;
+      color: @colorBlue;
+      margin-right: 20px;
+    }
+    .longLine{
+      display: inline-block;
+      flex:1;
+      height:1px;
+      background: @colorC8;
+    }
+    p{
+      padding-bottom: 40px;
+      display: flex;
+      span{
+        font-size: 16px;
+        color:@color3;
+      }
+      span.title{
+        color:@color9;
+        margin-right: 20px;
+      }
+      .time{
+        color:@color9;
+      }
+
+    }
+    p.projectDetail{
+      padding-bottom: 20px;
+    }
+  }
+  .icon-qunfengkefujingli{
+    position: fixed;
+    right:0;
+    top:50%;
+    font-size: 50px;
+    color: @colorBlue;
+  }
+}
+@media screen and (max-width: 480px){
+  .index {
+    .container {
+      .contain {
+        .search {
+          width: 100%;
+          margin: 30px auto;
+          input {
+            border: 1px solid @colorE6;
+            height: 55px;
+            line-height: 55px;
+            border-top-right-radius: 0;
+            border-bottom-right-radius: 0;
+          }
+          .searchInput {
+            width: 80%;
+            border-left: none;
+            margin-top: 20px;
+            .ant-btn {
+              height: 55px;
+              font-size: 18px;
+              padding: 0 25px;
+            }
+            input {
+              border-top-left-radius: 0;
+              border-bottom-left-radius: 0;
+            }
+          }
+          .cityChange {
+            width: 20%;
+            input {
+              border-right: none;
+            }
+
+          }
+        }
+      }
+    }
+  }
+}
